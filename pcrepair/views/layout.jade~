@@ -1,3 +1,6 @@
+- var HOMEPAGE = false
+block variables
+
 doctype html
 html
   head
@@ -10,7 +13,7 @@ html
     include ./includes/showcase.jade
     .container
       // Example row of columns
-      //block content
+      block content
       
       hr
       footer
