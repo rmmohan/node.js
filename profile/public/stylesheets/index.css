@@ -1,0 +1,23 @@
+body {
+    background: url('/images/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* main */
+
+.main .container {
+    margin-top: 170px;
+    text-align: center;
+}
+
+.main .container h1 {
+    font-size: 110px;
+    font-weight: 400;
+    color: rgba(102, 51, 153, 0.8);
+    text-transform: uppercase;
+}
+
+.main .container p {
+    font-size: 40px;
+    color: #333;
+}

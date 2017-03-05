@@ -1,0 +1,11 @@
+extends layout
+head
+    link(rel='stylesheet', href='/stylesheets/index.css')
+body
+    block content
+        // Begin page content
+        .main
+            .container
+                h1 Follow
+                p your passion. When work becomes fun, it is no longer work.
+
