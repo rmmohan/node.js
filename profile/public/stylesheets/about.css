@@ -1,0 +1,56 @@
+/* main */
+
+.main {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.main .row {
+    padding: 40px;
+}
+
+.main h1 {
+    font-size: 60px;
+}
+
+.main p {
+    font-size: 30px;
+}
+
+.album {
+    position: relative;
+    z-index: 5;
+    width: 400px;
+    vertical-align: top;
+    display:block; 
+    margin: 40px;
+    height: 400px;
+}
+
+/* the images */
+.album img { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 5px solid #f3f3f3;
+    box-shadow: 1px 1px 2px #666;
+    width:400px;
+    height:400px;
+    display:block;
+    transition: all .3s ease-in-out;
+}
+
+/* first image animation properties */
+.album:hover .photo1, .album:focus .photo1 {
+    transform: rotate(-15deg) translate(-100px, -3px) scale(1.1);
+}
+
+/* second image animation properties */
+.album:hover .photo2, .album:focus .photo2 {
+    ms-transform: rotate(0deg) translate(0, -3px) scale(1.1);
+}
+
+/* third image animation properties */
+.album:hover .photo3, .album:focus .photo3 {
+    transform: rotate(15deg) translate(100px, -3px) scale(1.1);
+}

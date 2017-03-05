@@ -1,0 +1,11 @@
+/* main */
+
+.main .row {
+    margin: 30px;
+}
+
+.main p {
+    font-size: 16px;
+    line-height: 2em;
+    margin-bottom: 0px;
+}

@@ -1,0 +1,49 @@
+extends layout
+block libraries
+    link(rel='stylesheet', href='/stylesheets/contact.css')
+
+block content
+    .main
+        #map(style='width:100%;height:400px')
+        .container
+            .row
+                .col-md-6
+                    p
+                        b Email: 
+                        | rmmohan@gmail.com
+                    p
+                        b Phone: 
+                        | (981) 996-4693
+                    p
+                        b Address: 
+                        |                             A-202, New Sanjay Apartments, Tukaram Nagar, Dombivli (East), Maharashtra, India
+                .col-md-6
+                    form
+                        .form-group
+                            label(for='name') Your name (required)
+                            input#name.form-control(type='text', placeholder='Name')
+                        .form-group
+                            label(for='email') Your email address (required)
+                            input#email.form-control(type='email', placeholder='Email')
+                        .form-group
+                            label(for='subject') Subject
+                            input#subject.form-control(type='text', placeholder='Subject')
+                        .form-group
+                            label(for='message') Message
+                            textarea#message.form-control(cols='50', rows='15', placeholder='Message')
+                        button.btn.btn-primary(type='submit') Submit
+        br
+        br
+        br
+
+    script.
+        function myMap() {
+            var myCenter = new google.maps.LatLng(19.209841,73.085876);
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {center: myCenter, zoom: 4};
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var marker = new google.maps.Marker({position:myCenter});
+            marker.setMap(map);
+        }
+    script(src='https://maps.googleapis.com/maps/api/js?callback=myMap')
+
