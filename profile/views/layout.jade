@@ -10,6 +10,7 @@ html
         title= title
         link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
         link(rel='stylesheet', href='/stylesheets/sticky-footer-navbar.css')
+        link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css', rel='stylesheet', integrity='sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1', crossorigin='anonymous')
         link(rel='stylesheet', href='/stylesheets/layout.css')
         block libraries
     body
@@ -17,5 +18,18 @@ html
         block content
         
         footer.footer
-            .container
-                p.text-muted Place sticky footer content here.
+            .footer-social
+                .container.text-center
+                    ul.list-inline
+                        li.social-github
+                            a(href='https://github.com/rmmohan', target='_blank')
+                                i.fa.fa-github
+                        li.social-twitter
+                            a(href='https://twitter.com/rmmohan', target='_blank')
+                                i.fa.fa-twitter
+                        li.social-facebook
+                            a(href='https://www.facebook.com/rammohan.vadlamani', target='_blank')
+                                i.fa.fa-facebook
+                        li.social-google-plus
+                            a(href='https://plus.google.com/109145555066584494530', target='_blank')
+                                i.fa.fa-google-plus
