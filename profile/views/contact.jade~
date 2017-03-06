@@ -18,7 +18,7 @@ block content
                         b Address: 
                         |                             A-202, New Sanjay Apartments, Tukaram Nagar, Dombivli (East), Maharashtra, India
                 .col-md-6
-                    form(action="/contact/sendMail", method="post")
+                    form
                         .form-group
                             label(for='name') Your name (required)
                             input#name.form-control(type='text', placeholder='Name', name='name')
