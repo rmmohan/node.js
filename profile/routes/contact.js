@@ -8,13 +8,13 @@ router.get('/', function(req, res, next) {
 });
 
 
-router.post('/sendMail', function(req, res) {
+/*router.post('/sendMail', function(req, res) {
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
-        service: 'gmail',
+        service: 'Yahoo',
         auth: {
-            user: 'rmmohan@gmail.com',
-            pass: ''
+            user: 'rmmohanv@yahoo.co.in',
+            pass: 'n*dakota*$123'
         }
     });
 
@@ -35,7 +35,7 @@ router.post('/sendMail', function(req, res) {
         console.log('Message %s sent: %s', info.messageId, info.response);
     });
 });
-
+*/
 
 
 module.exports = router;
